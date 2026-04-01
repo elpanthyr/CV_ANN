@@ -84,17 +84,13 @@ model = tf.keras.models.load_model(
 ```
 
 ## Running the Evaluation Pipeline
-The evaluation script (`evaluate_master.py`) performs the following operations:
+The evaluation file (`CV_ANN_test_eval.ipynb`) performs the following operations:
 1.  Loads the global `radioml_global_test.h5` dataset.
 2.  Iterates through all 9 chunked models.
 3.  Filters the test data so each model only infers on its designated domain.
 4.  Stitches the local predictions back into the global 24-class index.
 5.  Generates a unified Classification Report, an SNR degradation curve, and a Global Confusion Matrix.
 
-To execute the pipeline:
-```bash
-python evaluate_master.py
-```
 
 ## Results
 The CV-ANN natively excels at identifying rigid geometric structures in the I/Q plane. 
