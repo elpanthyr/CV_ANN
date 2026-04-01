@@ -5,6 +5,8 @@ This repository contains the implementation and evaluation pipeline for a **Comp
 
 Traditional neural networks treat the In-phase (I) and Quadrature (Q) components of a radio signal as two independent, real-valued spatial channels. This CV-ANN approach natively treats I/Q samples as complex numbers ($I + jQ$). By utilizing complex arithmetic within the convolutional layers, the network preserves the fundamental physical geometry of the signal, allowing it to natively extract phase shifts and magnitude variations that define dense modulation schemes.
 
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/f520169c-a495-4b04-acf3-c04f0d3da98d" />
+
 ## The Dataset & Chunking Strategy
 This project utilizes the **RadioML 2018.01A** dataset, which contains 24 distinct analog and digital modulation classes. 
 
