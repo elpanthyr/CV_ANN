@@ -41,7 +41,7 @@ When loading the `.keras` models, the following custom objects are required to r
 ## Evaluation Methodology: The 4 dB SNR Threshold
 Performance is strictly evaluated using an **Honest Per-Specialist** routing approach, where each model is tested exclusively on the domain it was trained to recognize.
 
-Furthermore, overall system capability is benchmarked at a hard cutoff of **$\ge$ 4 dB Signal-to-Noise Ratio (SNR)**. 
+Furthermore, overall system capability is benchmarked at a hard cutoff of **4 dB Signal-to-Noise Ratio (SNR)**. 
 * **Why 4 dB?** In dense modulation schemes (such as 256-QAM or 64-APSK), the physical distance between constellation points is microscopic. Below 4 dB SNR, thermal background noise physically expands these points into overlapping clouds, permanently destroying the geometric boundaries. Evaluating high-order modulations below this threshold measures noise rather than model learning capacity.
 
 ---
